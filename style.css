@@ -1,0 +1,128 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+.header{
+  background-color: aliceblue;
+  height: 65px;
+  width: 100%;
+}
+
+nav{
+  padding: 10px 0;
+}
+
+nav ul{
+  list-style: none;
+  width: 100%;
+  padding-right: 60px;
+}
+
+nav ul li{
+  display: inline-flex;
+  margin: 2px 20px;
+}
+
+nav ul li .heading{
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  font-family: monospace;
+  text-decoration: none;
+}
+
+nav ul li .subHeading{
+  left: 50%;
+  font-size: 20px;
+  color: rgb(243, 129, 228);
+  text-decoration: none;
+}
+
+body {
+  background: linear-gradient(45deg, rgb(74, 0, 248), rgb(0, 255, 170));
+  width: 100%;
+  min-height: 100vh;
+  color: #fff;
+  position: relative;
+ }
+ 
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900');
+
+.container{
+  width: 300px;
+  height: 95px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 10px;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  background: rgba(235, 0, 255, 0.11);
+ }
+
+ .container::before{
+  content: '';
+  width: 25px;
+  height: 25px;
+  background: #f41b75;
+  opacity: 0.2;
+  border-radius: 5px;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  z-index: -1;
+}
+
+.container::after{
+  opacity: 0.3;
+  content: '';
+  width: 80px;
+  height: 80px;
+  background: #419aff;
+  border-radius: 50%;
+  position: absolute;
+  right: -30px;
+  bottom: -30px;
+  z-index: -1;
+}
+
+h2 {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 100;
+  letter-spacing: 3px;
+  text-align: left;
+  position: relative;
+ }
+ 
+h1 {
+  top: -180%;
+  left: 50%;
+  font-size: 9vh;
+  letter-spacing: 5px;
+  position: absolute;
+  text-align: left;
+  transform: translateX(-50%);
+  color: white;
+  background:url('https://i.pinimg.com/originals/9f/9c/c5/9f9cc5217bb04790e5fb852b665ca2ff.jpg');
+  background:url('https://thumbs.dreamstime.com/b/tropical-flower-pattern-seamless-flowers-blossom-flowers-nature-background-vector-illustration-61142748.jpg');
+  background-size: auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 8s linear infinite;
+  &:nth-child(2) {
+    top: -100%;
+  }
+  @keyframes shine {
+    from {
+      background-position: center 0;
+    }
+    to {
+      background-position: center 200%;
+    }
+  }
+ }
+ 
